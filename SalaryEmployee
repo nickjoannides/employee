@@ -1,0 +1,27 @@
+package employee; //implicit superconstructor Employee() is undefined. Must explictly invoke another constructor
+
+public class SalaryEmployee extends Employee {
+	
+	private double AnnualSalary;
+	
+	public SalaryEmployee(String name, int employeeID,  double salary, String title,){
+		super(name,employeeID,title);
+		this.AnnualSalary = salary;
+		
+	}
+
+	public double raise(double percentage) {
+		AnnualSalary = AnnualSalary + (AnnualSalary*percentage);
+		return AnnualSalary;
+	}
+	
+	public double getAnnualSalary() {
+		return AnnualSalary;
+	}
+
+	public void setAnnualSalary(double salary) {
+		this.AnnualSalary = salary;
+	}
+
+
+}
