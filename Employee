@@ -1,0 +1,38 @@
+package employee;
+
+public class Employee {
+	//instance variables
+	private String name;		//	employee name
+	private int employeeID;		//	employee ID	
+	private double annualSalary;//	employee annual salary
+	
+	//constructor
+	public Employee(String name, int employeeID, double annualSalary) {
+		this.name = name;
+		this.employeeID = employeeID;
+		this.annualSalary = annualSalary;
+		
+		
+	}
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getName() {
+		return name;
+	}
+	
+		public void setemployeeID(int employeeID) {
+			this.employeeID = employeeID;
+		}
+		public int getemployeeID() {
+			return employeeID;
+		}
+			
+			public void setannualSalary(double annualSalary) {
+				this.annualSalary = annualSalary;
+			}
+			public double getannualSalary() {
+				return annualSalary;
+			}
+}
